@@ -23,7 +23,7 @@ namespace Level3
             // 止まるフラグがtrueなら、以降の処理は行わない
             if (_isStop) return;
             
-            _rb.velocity = Vector3.forward * _speed; // 前に移動させる処理
+            _rb.velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * _speed; // 入力に合わせて移動させる処理
         }
 
         private void OnCollisionEnter(Collision other)
