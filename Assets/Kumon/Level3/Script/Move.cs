@@ -18,7 +18,7 @@ namespace Level3
 
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             // 止まるフラグがtrueなら、以降の処理は行わない
             if (_isStop) return;
